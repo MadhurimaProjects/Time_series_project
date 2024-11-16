@@ -1,6 +1,6 @@
 # Time_series_project
 
-** Overview
+## Overview
 Due to the climate of India, it is prone to many kinds of natural disaster at different times of
 the year. For this the Government of India has allocated two types of funds -State Disaster
 Response Fund (SDRF) and National Disaster Response Fund (SDRF). In this project we are
