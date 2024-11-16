@@ -36,7 +36,42 @@ https://en.wikipedia.org/wiki/List_of_states_in_India_by_past_population
 https://testbook.com/ias-preparation/coastal-states-of-india
 
 
+## ABOUT THE DATA
+The following data consists of 13(+1) years of allocated State Disaster Response Fund
+(SDRF) (including both central and states share) for 29 states from year 2011 to 2023.The
+2024 SDRF data is also collected after the national budget is sanctioned.
+Disaster (s) covered under SDRF: Cyclone, drought, earthquake, fire, flood, tsunami,
+hailstorm, landslide, avalanche, cloudburst, pest attack, frost and cold waves.
+The State Disaster Response Fund (SDRF), constituted under Section 48 (1) (a) of the
+Disaster Management Act, 2005, is the primary fund available with State Governments for
+responses to notified disasters. The Central government also contributes a significant
+amount.
 
+## Visualisation
+We take the means SDRF for each state over 13 years and draw the doughnut
+diagrams accordingly.The doughnut chart shows with the most fund gets allocated to Odisha
+,Maharashtra,Gujrat ,Madhyapradesh, Haryana, Rajasthan and Tamil Nadu.
+
+## Explorative Study using Cluster Analysis
+```
+#state DRF
+d5=read.csv(file.choose(),head=T)
+d5
+head(d5)
+state_cluster=d5[,-1]
+fviz_nbclust(state_cluster,pam,method="silhouette")
+k_med1=pam(state_cluster,k=2)
+fviz_cluster(k_med1)
+k_med1$medoids
+k_med1$clustering
+y1=state_cluster[k_med1$clustering==1,]
+mean1=apply(y1,2,mean);mean1
+sd1=apply(y1,2,sd);sd1
+y2=state_cluster[k_med1$clustering==2,]
+mean2=apply(y2,2,mean);mean2
+sd2=apply(y2,s,sd);sd2
+c1=cbind(d5[,1],k_med1$clustering);c1
+```
 
 
 
