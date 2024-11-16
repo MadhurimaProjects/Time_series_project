@@ -21,3 +21,23 @@ SDRF for the 28 states. Our entire analysis will be focused within the period 20
 will check how close the forecasted SDRF values are for year 2024(the 2024 data has
 released recently). We also want to do a bivariate time series to incorporate any possible
 correlation between states and central to get better results
+
+## Objective
+1. Forecast of State Disaster Response Fund (SDRF), using time series analysis
+2. To see if there is any influence of area, population and coastline length on the SDRF
+allocation on certain states.
+
+## Data Source
+The State Disaster Response Fund data is collected from the following website:
+https://ndmindia.mha.gov.in/response-fund
+The population and density of states data is collected from
+https://en.wikipedia.org/wiki/List_of_states_in_India_by_past_population
+the coastline length data is collected from:
+https://testbook.com/ias-preparation/coastal-states-of-india
+
+
+
+
+
+
+
