@@ -28,11 +28,11 @@ correlation between states and central to get better results
 allocation on certain states.
 
 ## Data Source
-The State Disaster Response Fund data is collected from the following website:
+1.The State Disaster Response Fund data is collected from the following website:
 https://ndmindia.mha.gov.in/response-fund
-The population and density of states data is collected from
+2.The population and density of states data is collected from
 https://en.wikipedia.org/wiki/List_of_states_in_India_by_past_population
-the coastline length data is collected from:
+3.the coastline length data is collected from:
 https://testbook.com/ias-preparation/coastal-states-of-india
 
 
