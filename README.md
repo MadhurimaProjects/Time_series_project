@@ -53,46 +53,23 @@ diagrams accordingly.The doughnut chart shows with the most fund gets allocated 
 ,Maharashtra,Gujrat ,Madhyapradesh, Haryana, Rajasthan and Tamil Nadu.
 
 ## Explorative Study using Cluster Analysis
-```
-#state DRF
-d5=read.csv(file.choose(),head=T)
-d5
-head(d5)
-state_cluster=d5[,-1]
-fviz_nbclust(state_cluster,pam,method="silhouette")
-k_med1=pam(state_cluster,k=2)
-fviz_cluster(k_med1)
-k_med1$medoids
-k_med1$clustering
-y1=state_cluster[k_med1$clustering==1,]
-mean1=apply(y1,2,mean);mean1
-sd1=apply(y1,2,sd);sd1
-y2=state_cluster[k_med1$clustering==2,]
-mean2=apply(y2,2,mean);mean2
-sd2=apply(y2,s,sd);sd2
-c1=cbind(d5[,1],k_med1$clustering);c1
+Method used:  K-medoid clustering
+Findings:
+SDRF state share and central share is highly associated
+among each other. This also indicate that there is no unfairness in SDRF
+allocation to any state from central. . Each state has uniform allocation of funds with higher
+disaster-prone state getting comparatively more fund than the low disaster -prone states. 
 
-#central SDRF
-d6=read.csv(file.choose(),head=T)
-d6
-central_cluster=d6[,-1]
-fviz_nbclust(central_cluster,pam,method="silhouette")
-k_med2=pam(central_cluster,k=2)
-fviz_cluster(k_med2)
-k_med2$medoids
-k_med2$clustering
-y3=central_cluster[k_med2$clustering==1,]
-mean3=apply(y3,2,mean);mean3
-sd3=apply(y3,2,sd);sd3
-y4=central_cluster[k_med2$clustering==2,]
-mean4=apply(y4,2,mean);mean4
-sd4=apply(y4,s,sd);sd4
-c2=cbind(d6[,1],k_med2$clustering);c2
-c2[,2]
-c3=cbind(c1,c2[,2]);c3
+## Fitting of linear Regression for coastal area allocation
+Method used: Multiple Linear Regression
+Checking for model inaccuracies : Multicolinearity ,heteroscadasticity autocorrelation and outliars
+Observations:
+1. No heteroscadatiscity(using Gold_feld Quandt test)
+2. No autocorrelation (using Durbin Watson test)
+3. Presence of multicollinearity (using variance inflation factor)-removed using LASSO
 
-```
-
-
-
+Findings:
+States with coastal areas (with larger area)are more prone to
+disaster and should be allotted with higher SDRF for immediate relief of the casualties.. Also
+this applies for central share.
 
