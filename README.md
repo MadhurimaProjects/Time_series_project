@@ -73,3 +73,35 @@ States with coastal areas (with larger area)are more prone to
 disaster and should be allotted with higher SDRF for immediate relief of the casualties.. Also
 this applies for central share.
 
+## Time series Analysis & Forecasting
+Method Used:
+
+ Collecting the data and cleaning it
+ Preparing Visualization with respect to time vs key feature
+ Observing the stationarity of the series
+ Developing charts to understand its nature.
+ Model building – AR, MA, ARMA and ARIMA (VAR for bivariate time series forecasting)
+ Extracting insights from prediction
+ Forecasting.
+
+Findings:
+1. Central has allocated most of the funds during Corona pandemic.
+2. Bivariate Time series model(variance autoregressive model) gives better forecasted values than univariate time series models.
+
+## Summary
+1. From the clustering we see the SDRF central share and state share have high positive
+association. In other words ,the central and states allocates high SDRF for higher
+disaster-prone states and lower SDRF for less disaster-prone state. The allocation is
+fair. We confirm this by using Rank correlation which comes out to be positive
+indicating high association between the two shares.
+2.  Using regression it can be said that the length of coastline and area of each state also
+have significance influence on the allocation of SDRF. Geometrically the coastline
+plays a significant role in the natural disaster as the coastline area is more prone to
+cyclone , hurricane, flood etc. Statistically it is also evident that the states with coastal
+region are allocated with more SDRF.
+ We also forecasted the SDRF (both state and central share) for year 2024. The VAR
+model gives better values than the forecasted values by univariate time series model
+by reducing the MSE significantly due to the consideration of correlation between the
+2 sets of data(state share and central share).
+3.  Another interesting find is that central allocated huge SDRF share during the corona
+pandemic in 2019-2020.
