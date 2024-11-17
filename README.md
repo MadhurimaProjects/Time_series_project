@@ -60,7 +60,7 @@ among each other. This also indicate that there is no unfairness in SDRF
 allocation to any state from central. . Each state has uniform allocation of funds with higher
 disaster-prone state getting comparatively more fund than the low disaster -prone states. 
 
-## Fitting of linear Regression for coastal area allocation
+## Fitting of linear Regression for coastal area SDRF allocation
 Method used: Multiple Linear Regression
 Checking for model inaccuracies : Multicolinearity ,heteroscadasticity autocorrelation and outliars
 Observations:
