@@ -76,13 +76,13 @@ this applies for central share.
 ## Time series Analysis & Forecasting
 Method Used:
 
- Collecting the data and cleaning it
- Preparing Visualization with respect to time vs key feature
- Observing the stationarity of the series
- Developing charts to understand its nature.
- Model building – AR, MA, ARMA and ARIMA (VAR for bivariate time series forecasting)
- Extracting insights from prediction
- Forecasting.
+1. Collecting the data and cleaning it
+2. Preparing Visualization with respect to time vs key feature
+3. Observing the stationarity of the series
+4. Developing charts to understand its nature.
+5. Model building – AR, MA, ARMA and ARIMA (VAR for bivariate time series forecasting)
+6. Extracting insights from prediction
+7. Forecasting.
 
 Findings:
 1. Central has allocated most of the funds during Corona pandemic.
